@@ -4,40 +4,41 @@
   <title>B Club: Meeting Notes (4/9/24)</title>
   <meta name="description" content="Meeting Notes"/>
   <link rel="icon" href="media/Ben.jpg" type="image/jpg">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <header>
-      <h1>B Club: Meeting Notes</h1>
-      <h2>Meeting 2 of 10</h2>
-      <h3>Date: April 9, 2024</h3>
+  <main id="main-content">
+    <header class="meeting-header">
+      <h1 class="title">B Club: Meeting Notes</h1>
+      <h2 class="meeting-count">Meeting 2 of 10</h2>
+      <h3 class="meeting-date">Date: April 9, 2024</h3>
     </header>
   </main>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="fibonaccinumbers.html">"Random" Numbers</a></li>
+  <nav id="main-nav">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="fibonaccinumbers.html" class="nav-link">"Random" Numbers</a></li>
     </ul>
   </nav>
 
-  <div>
+  <div class="attendance-section">
     <h3>Attendance</h3>
-    <ol>
-      <li><b>Ben</b></li>
-      <li>Bob</li>
-      <li>Bin</li>
+    <ol class="attendance-list">
+      <li class="member"><b>Ben</b></li>
+      <li class="member">Bob</li>
+      <li class="member">Bin</li>
     </ol>
   </div>
 
-  <section>
+  <section id="agenda-section">
     <h3>Agenda</h3>
-    <p><strong>Today's Topic:</strong> Exploring what it’s like to have a name that starts with a "B" in American society. Discussion will cover the struggles, trials, tribulations, and experiences from birth to adulthood.</p>
+    <p><strong>Today's Topic:</strong> Exploring what it’s like to have a name that starts with a "B" in American society...</p>
 
-    <p><strong>Unfinished from Last Meeting:</strong> Debate the benefits of using web frameworks such as React or jQuery for projects within the B-name community.</p>
+    <p><strong>Unfinished from Last Meeting:</strong> Debate the benefits of using web frameworks such as React or jQuery...</p>
 
     <p><strong>Comments / Questions / Concerns:</strong></p>
-    <ul>
+    <ul class="concern-list">
       <li>Allow names that have a B but don't start with a B?</li>
       <li>Lack of <i>transperncy</i> about <em>board</em> selection</li>
     </ul>
@@ -45,35 +46,34 @@
 
   <hr>
 
-  <section>
+  <section id="media-section">
     <h3>Important Media</h3>
     <p>Popularity of the name ben over time:</p>
-    <img src="media/BenPopularity.jpg" alt="Popularity of the name ben over time"/>
+    <img src="media/BenPopularity.jpg" alt="Popularity of the name ben over time" class="media-image"/>
     <br>
-    <a href="http://www.nameplayground.com/Ben">Source</a>
+    <a href="http://www.nameplayground.com/Ben" class="media-source">Source</a>
     <br>
-    <span>Meeting Audio:</span>
+    <span class="media-audio-label">Meeting Audio:</span>
     <br>
-    <audio controls>
+    <audio controls class="meeting-audio">
       <source src="media/Recording.m4a" type="audio/mp4">
     </audio>
     <br>
-    Meeting Video:
+    <span class="media-video-label">Meeting Video:</span>
     <br>
-    <video controls width="600" height="400">
+    <video controls width="600" height="400" class="meeting-video">
       <source src="media/Video.mp4" type="video/mp4">
     </video>
   </section>
 
-  <details>
+  <details class="more-info">
     <summary>More Information about our Club</summary>
     <p>Our club is comprised of members whose name starts with B.</p>
   </details>
 
-  <form action="#" method="post">
+  <form action="#" method="post" id="new-member-form">
     <fieldset>
       <legend>New Member form</legend>
-
 
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
@@ -81,15 +81,12 @@
       <label for="namestartswithB">Does your name start with B:</label>
       <input type="checkbox" id="namestartswithB"><br><br>
 
-    
       <label for="dob">Date of Birth:</label>
       <input type="date" id="dob" name="dob"><br><br>
-
 
       <label for="message">Message:</label><br>
       <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here"></textarea><br><br>
 
-  
       <label for="color">Favorite Color:</label>
       <input list="colors" id="color" name="color">
       <datalist id="colors">
@@ -108,12 +105,11 @@
         <option value="australia">Australia</option>
       </select><br><br>
 
-
-      <button type="submit">Submit</button>
+      <button type="submit" class="submit-btn">Submit</button>
     </fieldset>
   </form>
 
-  <footer>
+  <footer class="site-footer">
     <p>© 2025 The B Club</p>
   </footer>
 </body>
