@@ -45,7 +45,8 @@ h3 {
 
 /* use color space */
 .meeting-header {
-    color: color(display-p3 0.3 0.6 0.9);
+    color: rgb(77, 153, 230);
+    color: color(display-p3 0.3 0.6 0.9); 
     padding: 10px 20px; 
     border-top: 5px solid red; 
     border-radius: 8px; 
